@@ -1,9 +1,7 @@
+.body {
 
-
-
-
-
-
+  padding: 5% 0% 5% 16%;
+}
 
 ::ng-deep table.mat-table {
   width: 100%;
@@ -22,17 +20,19 @@
   color: #767676;
 }
 
-::ng-deep .mat-sort-header-content {
+::ng-deep mat-sort-header-content {
   margin: auto;
 }
 
 .navy-blue {
-  background-color: rgba(25, 39, 75, 1);
-  color: white;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 140%;
-  font-family: "Inter", sans-serif;
+  // background-color: rgba(25, 39, 75, 1);
+  // color: white;
+  // font-weight: 500;
+  // font-size: 14px;
+  // line-height: 140%;
+  // font-family: "Inter", sans-serif;
+  color: rgba(25, 39, 75, 1);
+  ;
 }
 
 
@@ -44,139 +44,266 @@
 
 // -----------------------------------------------------------------------------------------------------------
 
-.viewform {
-  width: 70vw;
-  height: 585px;
-  // position: absolute;
-  // left: 235px;
-  // top: 155px;
-  background: #ffffff;
-  box-shadow: 0px 5px 10px rgba(134, 142, 216, 0.25);
-  padding: 15px;
+// .viewform {
+//   width: 70vw;
+//   height: 585px;
+//   // position: absolute;
+//   // left: 235px;
+//   // top: 155px;
+//   background: #ffffff;
+//   box-shadow: 0px 5px 10px rgba(134, 142, 216, 0.25);
+//   padding: 15px;
 
-  .userid-view,
-  .title-view,
-  .status-view {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 275px;
-    height: 45px;
-    margin-bottom: 30px;
+//   .userid-view,
+//   .title-view,
+//   .status-view {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     width: 275px;
+//     height: 45px;
+//     margin-bottom: 30px;
 
-    label {
-      font-size: 15px;
-      line-height: 34px;
-      color: #171717;
-      font-family: "Manrope", sans-serif;
-      font-weight: bold;
-    }
+//     label {
+//       font-size: 15px;
+//       line-height: 34px;
+//       color: #171717;
+//       font-family: "Manrope", sans-serif;
+//       font-weight: bold;
+//     }
 
-    input {
-      background: #eff0f6;
-      border-radius: 8px;
-      padding: 5px 16px;
-      border: hidden;
-      width: 200px;
-      height: 45px;
-      font-family: "Manrope", sans-serif;
-      font-size: 14px;
-      line-height: 34px;
-      font-weight: bolder;
-    }
-  }
+//     input {
+//       background: #eff0f6;
+//       border-radius: 8px;
+//       padding: 5px 16px;
+//       border: hidden;
+//       width: 200px;
+//       height: 45px;
+//       font-family: "Manrope", sans-serif;
+//       font-size: 14px;
+//       line-height: 34px;
+//       font-weight: bolder;
+//     }
+//   }
 
-  .error-view {
-    width: 525px;
-    height: 220px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 30px;
+//   .error-view {
+//     width: 525px;
+//     height: 220px;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     align-items: flex-start;
+//     margin-bottom: 30px;
 
-    label {
-      font-size: 15px;
-      line-height: 34px;
-      color: #171717;
-      font-family: "Manrope", sans-serif;
-      font-weight: bold;
-    }
+//     label {
+//       font-size: 15px;
+//       line-height: 34px;
+//       color: #171717;
+//       font-family: "Manrope", sans-serif;
+//       font-weight: bold;
+//     }
 
-    input {
-      background: #eff0f6;
-      border-radius: 10px;
-      padding: 5px 16px;
-      border: hidden;
-      width: 525px;
-      height: 175px;
-      font-family: "Manrope", sans-serif;
-      font-size: 14px;
-      line-height: 34px;
-      font-weight: bolder;
-    }
-  }
+//     input {
+//       background: #eff0f6;
+//       border-radius: 10px;
+//       padding: 5px 16px;
+//       border: hidden;
+//       width: 525px;
+//       height: 175px;
+//       font-family: "Manrope", sans-serif;
+//       font-size: 14px;
+//       line-height: 34px;
+//       font-weight: bolder;
+//     }
+//   }
 
-  .submit-btn {
-    background: radial-gradient(
-      122.27% 198.92% at -22.27% -27.38%,
-      #44ace1 0%,
-      #1546a0 100%
-    );
-    box-shadow: 0px 24px 48px -18px rgba(21, 70, 160, 0.5);
-    border-radius: 12px;
-    width: 105px;
-    height: 36px;
-    font-weight: bold;
-    font-size: 13px;
-    line-height: 22px;
-    font-family: "Manrope", sans-serif;
-    color: white;
-    border: hidden;
-  }
+//   .submit-btn {
+//     background: radial-gradient(122.27% 198.92% at -22.27% -27.38%,
+//         #44ace1 0%,
+//         #1546a0 100%);
+//     box-shadow: 0px 24px 48px -18px rgba(21, 70, 160, 0.5);
+//     border-radius: 12px;
+//     width: 105px;
+//     height: 36px;
+//     font-weight: bold;
+//     font-size: 13px;
+//     line-height: 22px;
+//     font-family: "Manrope", sans-serif;
+//     color: white;
+//     border: hidden;
+//   }
 
 
-  .cancel-btn
-  {
-    background: radial-gradient(
-      122.27% 198.92% at -22.27% -27.38%,
-      #ff8585 0%,
-      #ce2620 100%
-    );
-    box-shadow: 0px 24px 48px -18px rgba(160, 58, 21, 0.5);
-    border-radius: 12px;
-    width: 105px;
-    height: 36px;
-    font-weight: bold;
-    font-size: 13px;
-    line-height: 22px;
-    font-family: "Manrope", sans-serif;
-    color: white;
-    border: hidden;
-    margin-left: 15px;
-  }
-}
+//   .cancel-btn {
+//     background: radial-gradient(122.27% 198.92% at -22.27% -27.38%,
+//         #ff8585 0%,
+//         #ce2620 100%);
+//     box-shadow: 0px 24px 48px -18px rgba(160, 58, 21, 0.5);
+//     border-radius: 12px;
+//     width: 105px;
+//     height: 36px;
+//     font-weight: bold;
+//     font-size: 13px;
+//     line-height: 22px;
+//     font-family: "Manrope", sans-serif;
+//     color: white;
+//     border: hidden;
+//     margin-left: 15px;
+//   }
+// }
 
-::ng-deep .mat-select-value {
-  text-align: center;
-}
+// ::ng-deep .mat-select-value {
+//   text-align: center;
+// }
 
 
-@media (max-width: 950px)
-{
-  .support-table{
+@media (max-width: 950px) {
+  .support-table {
     left: 35px;
     z-index: -50;
   }
 
-  .search-filter
-  {
+  .search-filter {
     left: 35px;
   }
 
-  .title
-  {
+  .title {
     left: 35px;
     margin-bottom: 25px;
   }
+}
+
+::ng-depp td.mat-cell {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+.mat-header-cell {
+  text-align: center;
+  font-weight: bold;
+  font-size: medium;
+  font-family: sans-serif;
+  line-height: 140%;
+  color: #767676;
+}
+
+.mat-header-row {
+  color: black;
+  background-color: #EFF0F1;
+}
+
+::ng-deep tr.mat-header-row {
+  background: #eff0f6;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 140%;
+  color: #767676;
+}
+
+mat-header-cell {
+  display: flex;
+  justify-content: flex-end;
+}
+
+::ng-deep .mat-sort-header-container {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.mat-cell {
+  text-align: center;
+}
+
+.mat-row:hover {
+  background-color: #F5F5F5;
+}
+
+::ng-deep tr.mat-cell {
+  font-family: sans-serif;
+  font-size: 13px;
+  line-height: 140%;
+  color: #767676;
+}
+
+.noSupportDataParentClass {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.noSupportDataClass {
+  height: 48px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #eff0f6;
+  // margin-top: 20%;
+  font-weight: 600;
+  font-family: "Manrope", sans-serif;
+  margin-right: 1.0rem;
+}
+
+
+@media (max-width: 991.98px) {
+  .body {
+    padding: 8% 2% 0% 4%;
+  }
+
+  .noSupportDataClass {
+    margin-right: 0rem;
+  }
+}
+
+
+
+
+
+@media (max-width: 767.98px) {
+  table th {
+    font-size: 2.4vw;
+  }
+
+  .noSupportDataClass {
+    margin-right: 0rem;
+  }
+
+  .body {
+    padding: 8% 0% 0% 1%;
+  }
+}
+
+
+@media (max-width: 575.98px) {
+
+  .body {
+    padding: 8% 3% 0% 5%;
+  }
+
+  table td img {
+    width: 20px;
+    height: 20px;
+  }
+
+  table td button {
+    margin-left: 9px;
+    width: 10px;
+  }
+
+  table td button .mat-icon {
+    font-size: 16px;
+  }
+
+  .mat-cell {
+    font-size: 8px;
+  }
+
+  .noSupportDataClass {
+    margin-right: 0rem;
+  }
+
 }
